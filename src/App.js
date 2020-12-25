@@ -20,7 +20,7 @@ function App()
         alert("Enter City")
       }
 
-      const response = await Axios.get('http://api.openweathermap.org/data/2.5/weather?q='+a+'&appid=69089d672da4c29c1c959cbaf82acdf2')
+      const response = await Axios.get('https://api.openweathermap.org/data/2.5/weather?q='+a+'&appid=69089d672da4c29c1c959cbaf82acdf2')
       
       document.getElementById("result").innerHTML =
       ReactDOMServer.renderToString(<Result response={response}/>);
