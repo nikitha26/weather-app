@@ -11,11 +11,16 @@ import './App.css';
 import Axios from "axios";
 import Result from "./Result";
 
+      //Start Auto Complete
+        
+      //End Auto Complete
+
+      
 function App() 
 {
     const GetCity = async() => {
       var a = document.getElementById("city").value;
-
+          console.log(a)
       if(a == ""){
         alert("Enter City")
       }

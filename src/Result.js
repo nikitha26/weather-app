@@ -8,7 +8,6 @@ import {Container,
     CardTitle
     } from "reactstrap"
 function Result({response}){
-   console.log(response)
      var q = response.data
       var x = response.data['name']
       var country = q['sys']['country']
