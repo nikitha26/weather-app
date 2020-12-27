@@ -11,9 +11,7 @@ import './App.css';
 import Axios from "axios";
 import Result from "./Result";
 
-      //Start Auto Complete
-        
-      //End Auto Complete
+  
 
       
 function App() 
@@ -35,17 +33,19 @@ function App()
         ReactDOMServer.renderToString(<Result response={response}/>);
       }
     }
-     
+    
   return (
     <Container fluid className="p-4">
       <Row >
-          <Col md={4} className="offset-md-4 mt-2 pt-5">
+          <Col md={4} className="offset-md-4 mt-3">
             <h2>WEATHER APPLICATION</h2>
+            <h3 className="ml-5 pl-5">Using React.js</h3>
               <h4 className="mt-5">ENTER CITY :</h4>
               <Input
                 type="text"
                 id="city"
                 placeholder="Enter City"
+                
               />
               <Button 
                 className="mt-5 button"
