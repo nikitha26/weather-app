@@ -18,7 +18,7 @@ function App()
 {
     const GetCity = async() => {
       var a = document.getElementById("city").value;
-          console.log(a)
+          
       if(a == ""){
         alert("Enter City")
       }
@@ -28,9 +28,17 @@ function App()
        else if(typeof(a) === 'string')
       {
         const response = await Axios.get('https://api.openweathermap.org/data/2.5/weather?q='+a+'&appid=69089d672da4c29c1c959cbaf82acdf2')
+        console.log(response)
+
+        if(response.status == 200){
+          console.log("Success")
+          document.getElementById("result").innerHTML =
+          ReactDOMServer.renderToString(<Result response={response}/>);
+        }
+        else{
+          console.log("Error Accured")
+        }
         
-        document.getElementById("result").innerHTML =
-        ReactDOMServer.renderToString(<Result response={response}/>);
       }
     }
     

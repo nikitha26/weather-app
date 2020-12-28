@@ -12,6 +12,7 @@ function Result({response}){
       var x = response.data['name']
       var country = q['sys']['country']
       var y = q['main']['temp']
+      var humidity = q['main']['humidity']
       var z = q['weather'][0]['description']
       var deg = q['wind']['deg']
      
@@ -28,9 +29,11 @@ function Result({response}){
                         <h5>CITY :{x},{country}</h5>
                     </CardTitle> 
                     <CardBody>     
-                        <h6>TEMP :{y}</h6>
-                        <h6>DESCRIPTION :{z}</h6>
-                        <h6>DEG :{deg}</h6>
+                        <h6>Temp :{y}</h6>
+                        <h6>Description :{z}</h6>
+                        <h6>Deg :{deg}</h6>
+                        <h6>Humidity :{humidity}%</h6>
+
                 </CardBody>
             </Card> 
         </Col> 
