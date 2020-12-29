@@ -11,7 +11,7 @@ h2{
     border-bottom: 4px solid rgb(190, 8, 84);
 }
 h3{
-    color:rgb(18, 33, 235);
+    color:rgb(194, 3, 67);
     font-weight: bold;
 }
 h5{
@@ -27,15 +27,16 @@ h6{
     border-radius: 25px;
     padding: 10px;
 }
-
 h4{
     color:rgb(194, 3, 67);
     font-weight: bolder;
 }
-/* span{
-    padding: 10px;
-} */
+
 p{
     color: rgb(5, 20, 226);
     font-size: 12px;
+}
+#card{
+  border: 3px solid blue;
+  border-radius: 10px;
 }

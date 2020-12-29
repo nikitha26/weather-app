@@ -3,17 +3,12 @@ import ReactDOMServer from 'react-dom/server';
 import {Container,Row,Col,
   FormGroup,
   Input,
-  Button,
-  Form,
-  InputGroup,
-  InputGroupAddon} from "reactstrap"
+  Button
+  } from "reactstrap"
 import './App.css';
 import Axios from "axios";
 import Result from "./Result";
 
-  
-
-      
 function App() 
 {
     const GetCity = async() => {
@@ -47,13 +42,13 @@ function App()
       <Row >
           <Col md={4} className="offset-md-4 mt-3">
             <h2>WEATHER APPLICATION</h2>
-            <h3 className="ml-5 pl-5">Using React.js</h3>
+            <h3  className="ml-1">Using Open Weather API</h3>
+            {/* <h3 className="ml-5 pl-5">Using React.js</h3> */}
               <h4 className="mt-5">ENTER CITY :</h4>
               <Input
                 type="text"
                 id="city"
-                placeholder="Enter City"
-                
+                placeholder="Enter City Name"
               />
               <Button 
                 className="mt-5 button"
@@ -68,5 +63,4 @@ function App()
     </Container>             
   );
 }
-
 export default App;

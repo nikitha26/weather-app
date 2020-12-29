@@ -1,10 +1,8 @@
 import React from "react";
-import {Container,
-    Row,
+import {
     Col,
     Card,
     CardBody,
-    CardText,
     CardTitle
     } from "reactstrap"
 function Result({response}){
@@ -17,14 +15,14 @@ function Result({response}){
       var deg = q['wind']['deg']
      
       //Date and time
-      var d = new Date();
+        var d = new Date();
         var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
         var timeanddate = d.getHours()+":"+d.getMinutes()+","+months[d.getMonth()]+" "+d.getDate()
     return(
         <Col lg={12} className="mt-4" id="result">
-            <Card>
-            <p>{timeanddate}</p>
+            <Card id="card">
+            <p className="mt-2 ml-1">{timeanddate}</p>
                     <CardTitle className="text-center">
                         <h5>CITY :{x},{country}</h5>
                     </CardTitle> 
@@ -33,7 +31,6 @@ function Result({response}){
                         <h6>Description :{z}</h6>
                         <h6>Deg :{deg}</h6>
                         <h6>Humidity :{humidity}%</h6>
-
                 </CardBody>
             </Card> 
         </Col> 
