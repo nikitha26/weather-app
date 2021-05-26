@@ -20,7 +20,7 @@ function Result({response}){
         var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
         var timeanddate = d.getHours()+":"+d.getMinutes()+","+months[d.getMonth()]+" "+d.getDate()
     return(
-        <Col lg={4} className="mt-4" id="result">
+        <Col lg={12} className="mt-4" id="result">
             <Card id="card">
             <p className="mt-2 ml-1">{timeanddate}</p>
                     <CardTitle className="text-center">
